@@ -2,7 +2,13 @@ using System;
 
 namespace  Org.Kevoree.Core.Api
 {
-	class Port
+	public interface Port
 	{
+
+		void send (string payload, Callback callback);
+
+		string getPath ();
+
+		int getConnectedBindingsSize ();
 	}
 }
