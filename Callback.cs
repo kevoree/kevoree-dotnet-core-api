@@ -1,6 +1,6 @@
 using System;
 
-namespace  Org.Kevoree.Core.Api
+namespace Org.Kevoree.Core.Api
 {
 	public interface Callback
 	{

@@ -1,6 +1,6 @@
 using System;
 
-namespace  Org.Kevoree.Core.Api
+namespace Org.Kevoree.Core.Api
 {
 	public class CallbackResult
 	{
@@ -40,6 +40,4 @@ namespace  Org.Kevoree.Core.Api
 			this.payload = payload;
 		}
 	}
-
-
 }
