@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>org-kevoree-api</id>
+    <version>1.0.0</version>
+    <title>Kevoree Api</title>
+    <authors>Manuel Leduc</authors>
+    <owners>Kevoree</owners>
+    <licenseUrl>https://github.com/kevoree/kevoree-dotnet-core-api/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kevoree/kevoree-dotnet-core-api</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/5556542?v=3&amp;s=200</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Kevoree components Api</description>
+    <releaseNotes>First draft version.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Kevoree Api</tags>
+  </metadata>
+  <files>
+    <file src="bin/Release/Core.Api.dll" target="lib/net40/Core.Api.dll" />
+  </files>
+</package>
