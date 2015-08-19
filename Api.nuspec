@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>org-kevoree-api</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <title>Kevoree Api</title>
     <authors>Manuel Leduc</authors>
     <owners>Kevoree</owners>
@@ -11,7 +11,7 @@
     <iconUrl>https://avatars3.githubusercontent.com/u/5556542?v=3&amp;s=200</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Kevoree components Api</description>
-    <releaseNotes>First draft version.</releaseNotes>
+    <releaseNotes>Clone of https://github.com/dukeboard/kevoree/tree/master/kevoree-core/org.kevoree.annotation.api</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Kevoree Api</tags>
   </metadata>

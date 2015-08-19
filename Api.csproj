@@ -37,6 +37,93 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />-->
+    <Reference Include="org.kevoree.model-5.2.6-SNAPSHOT-jar-with-dependencies">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\KevoreeModel.dll.1.0.0\lib\net40\KevoreeModel.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.AWT.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Cldrdata">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Cldrdata.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Localedata">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Localedata.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Nashorn">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Nashorn.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI">
+      <HintPath>..\kevoree-dotnet-group-remotews\packages\IKVM.8.0.5449.1\lib\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -46,6 +133,13 @@
     <Compile Include="ChannelContext.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Port.cs" />
+    <Compile Include="ModelService.cs" />
+    <Compile Include="UUIDModel.cs" />
+    <Compile Include="UpdateCallback.cs" />
+    <Compile Include="ModelListener.cs" />
+    <Compile Include="UpdateContext.cs" />
+    <Compile Include="LockCallBack.cs" />
+    <Compile Include="Protocol.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -55,4 +149,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>
