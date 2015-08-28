@@ -146,6 +146,8 @@
     <Compile Include="AdaptationModel.cs" />
     <Compile Include="AdaptationPrimitive.cs" />
     <Compile Include="AdaptationType.cs" />
+    <Compile Include="BootstrapService.cs" />
+    <Compile Include="IRunner.cs" />
     <Compile Include="NodeType.cs" />
     <Compile Include="PrimitiveCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
