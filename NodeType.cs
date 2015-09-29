@@ -13,5 +13,7 @@ namespace Org.Kevoree.Core.Api
         AdaptationModel plan(ContainerRoot actualModel, ContainerRoot targetModel);
 
         PrimitiveCommand getPrimitive(AdaptationPrimitive primitive);
+
+        void Start();
     }
 }

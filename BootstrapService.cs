@@ -10,6 +10,6 @@ namespace Org.Kevoree.Core.Api
     {
         void injectDictionary(Instance instance, IRunner target, bool onlyDefault);
 
-        IRunner createInstance(ContainerNode nodeInstance);
+        INodeRunner createInstance(ContainerNode nodeInstance);
     }
 }

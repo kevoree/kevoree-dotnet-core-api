@@ -147,6 +147,7 @@
     <Compile Include="AdaptationPrimitive.cs" />
     <Compile Include="AdaptationType.cs" />
     <Compile Include="BootstrapService.cs" />
+    <Compile Include="INodeRunner.cs" />
     <Compile Include="IRunner.cs" />
     <Compile Include="NodeType.cs" />
     <Compile Include="PrimitiveCommand.cs" />
