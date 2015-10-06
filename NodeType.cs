@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using org.kevoree.pmodeling.api.trace;
+using Org.Kevoree.Core.Api;
+using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Api
 {
     public interface NodeType
     {
-        AdaptationModel plan(ContainerRoot actualModel, ContainerRoot targetModel);
+        AdaptationModel plan(IContainerRootMarshalled current, IContainerRootMarshalled target, ITracesSequence traces);
 
         PrimitiveCommand getPrimitive(AdaptationPrimitive primitive);
 

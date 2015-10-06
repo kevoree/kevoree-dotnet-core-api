@@ -12,7 +12,7 @@ namespace Org.Kevoree.Core.Api
      * @param bypassUUID The uuid which allow to apply reconfiguration.
      * @param error a boolean which explicit if the lock is correctly set
      */
-		void run(Guid bypassUUID, Boolean error);
+		void run(Guid? bypassUUID, Boolean error);
 	}
 
 }
