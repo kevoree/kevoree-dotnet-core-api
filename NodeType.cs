@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using org.kevoree.pmodeling.api.trace;
 using Org.Kevoree.Core.Api;
+using Org.Kevoree.Core.Api.Command;
 using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Api
@@ -15,7 +16,7 @@ namespace Org.Kevoree.Core.Api
     {
         AdaptationModel plan(IContainerRootMarshalled current, IContainerRootMarshalled target, ITracesSequence traces);
 
-        PrimitiveCommand getPrimitive(AdaptationPrimitive primitive);
+        ICommand getPrimitive(AdaptationPrimitive primitive);
 
         void Start();
     }

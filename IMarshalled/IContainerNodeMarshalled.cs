@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IContainerNodeMarshalled: IKMFContainerMarshalled
+    public interface IContainerNodeMarshalled : IKMFCommonMarshalled
     {
         string path();
     }

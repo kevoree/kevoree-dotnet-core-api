@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IFragmentDictionaryMarshalled: IKMFContainerMarshalled
+    public interface IFragmentDictionaryMarshalled : IKMFCommonMarshalled
     {
          string getName();
     }

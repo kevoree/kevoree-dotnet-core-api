@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IInstanceMarshalled : IKMFCommonMarshalled
+    public interface IKMFCommonMarshalled
     {
         bool isOfType(Type t);
-        string getName();
+        IKMFContainerMarshalled eContainer();
+        string getRefInParent();
         string path();
+        IKMFContainerMarshalled CastToKFMContainer();
     }
 }

@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IInstanceMarshalled : IKMFCommonMarshalled
+    public interface IDeployUnitMarshalled : IKMFCommonMarshalled
     {
-        bool isOfType(Type t);
-        string getName();
-        string path();
     }
 }

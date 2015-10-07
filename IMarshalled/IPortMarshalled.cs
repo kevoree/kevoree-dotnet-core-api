@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IPortMarshalled: IKMFContainerMarshalled
+    public interface IPortMarshalled : IKMFCommonMarshalled
     {
-        IPortMarshalled getPort();
+        
     }
 }

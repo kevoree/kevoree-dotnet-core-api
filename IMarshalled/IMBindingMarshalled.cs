@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IMBindingMarshalled : IKMFContainerMarshalled
+    public interface IMBindingMarshalled : IKMFCommonMarshalled
     {
         IChannelMarshalled getHub();
         IPortMarshalled getPort();
