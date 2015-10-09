@@ -11,5 +11,7 @@ namespace Org.Kevoree.Core.Api
         void injectDictionary(Instance instance, IRunner target, bool onlyDefault);
 
         INodeRunner createInstance(ContainerNode nodeInstance);
+
+        IComponentRunner LoadSomething(string name, string version, string path);
     }
 }

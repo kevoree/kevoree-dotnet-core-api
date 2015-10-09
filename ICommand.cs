@@ -10,5 +10,6 @@ namespace Org.Kevoree.Core.Api.Command
     {
         bool Execute();
         void Undo();
+        string Name();
     }
 }

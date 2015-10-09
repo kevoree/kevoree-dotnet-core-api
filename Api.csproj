@@ -158,12 +158,14 @@
     <Compile Include="IMarshalled\IKMFContainerMarshalled.cs" />
     <Compile Include="IMarshalled\IMBindingMarshalled.cs" />
     <Compile Include="IMarshalled\IPortMarshalled.cs" />
+    <Compile Include="IMarshalled\ITypeDefinitionMarshalled.cs" />
     <Compile Include="IMarshalled\IValueMarshalled.cs" />
     <Compile Include="IModelSetTraceMarshalled.cs" />
     <Compile Include="IModelRemoveTraceMarshalled.cs" />
     <Compile Include="IModelAddTraceMarshalled.cs" />
     <Compile Include="IModelTraceMarshalled.cs" />
     <Compile Include="INodeRunner.cs" />
+    <Compile Include="IComponentRunner.cs" />
     <Compile Include="IRunner.cs" />
     <Compile Include="ITracesSequence.cs" />
     <Compile Include="Marshalled\ChannelMarshalled.cs" />
@@ -179,6 +181,7 @@
     <Compile Include="Marshalled\Traces\ModelRemoveTraceMarshalled.cs" />
     <Compile Include="Marshalled\Traces\ModelSetTraceMarshalled.cs" />
     <Compile Include="Marshalled\Traces\ModelTraceMarshalled.cs" />
+    <Compile Include="Marshalled\TypeDefinitionMarshalled.cs" />
     <Compile Include="Marshalled\ValueMarshalled.cs" />
     <Compile Include="NodeType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -45,5 +45,10 @@ namespace Org.Kevoree.Core.Marshalled
         {
             return new KMFContainerMarshalled(this.instance);
         }
+
+        public ITypeDefinitionMarshalled GetTypeDefinition()
+        {
+            return new TypeDefinitionMarshalled(this.instance.getTypeDefinition());
+        }
     }
 }
