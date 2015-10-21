@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Org.Kevoree.Core.Api.IMarshalled;
+using Org.Kevoree.Core.Api.Marshalled;
 
 namespace Org.Kevoree.Core.Marshalled
 {
@@ -24,6 +25,11 @@ namespace Org.Kevoree.Core.Marshalled
         public string getName()
         {
             return this.typeDefinition.getName();
+        }
+
+        public IDictionaryTypeMarshalled getDictionaryType()
+        {
+            return new DictionaryTypeMarshalled(this.typeDefinition.getDictionaryType());
         }
     }
 }

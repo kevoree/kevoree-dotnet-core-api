@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IChannelMarshalled : IKMFCommonMarshalled
+    public interface IChannelMarshalled : IInstanceMarshalled
     {
-        
+        List<IMBindingMarshalled> getBindings();
+        bool getStarted();
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Org.Kevoree.Core.Api.IMarshalled
 {
-    public interface IFragmentDictionaryMarshalled : IDictionaryMarshalled
+    public interface IComponentInstanceMarshalled : IInstanceMarshalled
     {
-         string getName();
+        string getName();
     }
 }

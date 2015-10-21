@@ -1,29 +1,31 @@
 using System;
 using org.kevoree;
+using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Api.Handler
 {
+    [Serializable]
 	public class UpdateContext
 	{
-		public UpdateContext (ContainerRoot currentModel, ContainerRoot proposedModel, String callerPath)
+		public UpdateContext (IContainerRootMarshalled currentModel, IContainerRootMarshalled proposedModel, String callerPath)
 		{
 			this.currentModel = currentModel;
 			this.proposedModel = proposedModel;
 			this.callerPath = callerPath;
 		}
 
-		protected ContainerRoot currentModel;
+		protected IContainerRootMarshalled currentModel;
 
-		protected ContainerRoot proposedModel;
+        protected IContainerRootMarshalled proposedModel;
 
 		protected String callerPath;
 
-		public ContainerRoot getCurrentModel ()
+        public IContainerRootMarshalled getCurrentModel()
 		{
 			return currentModel;
 		}
 
-		public ContainerRoot getProposedModel ()
+        public IContainerRootMarshalled getProposedModel()
 		{
 			return proposedModel;
 		}

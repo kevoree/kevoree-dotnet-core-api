@@ -18,6 +18,12 @@ namespace Org.Kevoree.Core.Marshalled
         {
             this.deployUnit = deployUnit;
         }
+
+        public string serialize()
+        {
+            var kf = new org.kevoree.factory.DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this.deployUnit);
+        }
  
         public bool isOfType(Type t)
         {

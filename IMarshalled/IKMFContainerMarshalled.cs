@@ -14,5 +14,9 @@ namespace Org.Kevoree.Core.Api.IMarshalled
         IFragmentDictionaryMarshalled CastToFragmentDictionary();
         IDeployUnitMarshalled CastToDeployUnit();
         IValueMarshalled CastToValue();
+        IComponentInstanceMarshalled CastToComponentInstance() ;
+        IChannelMarshalled CastToChannel();
+        IGroupMarshalled CastToGroup();
+        IContainerNodeMarshalled CastToContainerNode();
     }
 }

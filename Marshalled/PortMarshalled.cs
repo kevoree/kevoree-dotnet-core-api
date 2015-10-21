@@ -19,6 +19,12 @@ namespace Org.Kevoree.Core.Marshalled
     {
         private org.kevoree.Port deleg;
 
+        public string serialize()
+        {
+            var kf = new org.kevoree.factory.DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this.deleg);
+        }
+
         public bool isOfType(Type t)
         {
             return t.IsAssignableFrom(this.deleg.GetType());

@@ -69,17 +69,22 @@ namespace Org.Kevoree.Core.Api
             if (obj is AdaptationPrimitive)
             {
                 var a = Tuple.Create(this.Type, this.NodePath, this._ref, this._ref2);
-                var b = Tuple.Create(((AdaptationPrimitive)obj).Type, ((AdaptationPrimitive)obj).NodePath, ((AdaptationPrimitive)obj)._ref, ((AdaptationPrimitive)obj)._ref2);
+                var that = (AdaptationPrimitive) obj;
+                var b = Tuple.Create(that.Type, that.NodePath, that._ref, that._ref2);
                 return a.Equals(b);
             }
             throw new IllegalArgumentException();
+        }
+
+        public override string ToString()
+        {
+            return "AdaptationPrimitive [Type = " + Type + " ; NodePath = " + NodePath + " ; Ref = " + _ref + "; Ref2 = " + _ref2 + "]";
         }
 
         public int CompareTo(object obj)
         {
             if (obj is AdaptationPrimitive)
             {
-                //Tuple<AdaptationType, string>
                 var t1 = this.Type;
                 var n1 = this.NodePath;
                 var t2 = ((AdaptationPrimitive)obj).Type;

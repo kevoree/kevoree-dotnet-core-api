@@ -7,19 +7,16 @@ namespace Org.Kevoree.Core.Api
 {
     public enum AdaptationType
     {
-        AddDeployUnit = 1,
-        RemoveDeployUnit = 2,
-        UpdateInstance =3,
-        UpdateBinding = 4,
-        UpdateDictionaryInstance =5,
+        StopInstance = 1,
+        RemoveBinding = 2,
+        RemoveInstance = 3,
+        RemoveDeployUnit = 4,
+        AddDeployUnit = 5,
         AddInstance = 6,
-        RemoveInstance = 7,
-        AddBinding = 8,
-        RemoveBinding = 9,
+        AddBinding = 7,
+        UpdateDictionary = 8,
+        UpdateInstance = 9,
         StartInstance = 10,
-        StopInstance = 11,
-        LinkDeployUnit = 12,
-        UpdateCallMethod = 13,
-        UpgradeInstance = 14
+        Harakiri = 11
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Org.Kevoree.Core.Api;
 using Org.Kevoree.Core.Api.IMarshalled;
+using org.kevoree;
 
 namespace Org.Kevoree.Core.Marshalled
 {
@@ -15,6 +16,12 @@ namespace Org.Kevoree.Core.Marshalled
         public FragmentDictionaryMarshalled(org.kevoree.FragmentDictionary fragmentDictionary)
         {
             this.fragmentDictionary = fragmentDictionary;
+        }
+
+        public string serialize()
+        {
+            var kf = new org.kevoree.factory.DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this.fragmentDictionary);
         }
 
         public string getName()
@@ -45,6 +52,17 @@ namespace Org.Kevoree.Core.Marshalled
         public IKMFContainerMarshalled CastToKFMContainer()
         {
             return new KMFContainerMarshalled(this.fragmentDictionary);
+        }
+
+        public List<IValueMarshalled> getValues()
+        {
+            var ret = new List<IValueMarshalled>();
+            var itt = this.fragmentDictionary.getValues().iterator();
+            while (itt.hasNext())
+            {
+                ret.Add(new ValueMarshalled((Value)itt.next()));
+            }
+            return ret;
         }
     }
 }

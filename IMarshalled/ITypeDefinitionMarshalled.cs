@@ -10,5 +10,6 @@ namespace Org.Kevoree.Core.Api.IMarshalled
     {
         string getVersion();
         string getName();
+        IDictionaryTypeMarshalled getDictionaryType();
     }
 }

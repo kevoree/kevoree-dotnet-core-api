@@ -4,14 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using org.kevoree;
+using org.kevoree.impl;
 using Org.Kevoree.Core.Api;
 using Org.Kevoree.Core.Api.IMarshalled;
+using Org.Kevoree.Core.Api.Marshalled;
 
 namespace Org.Kevoree.Core.Marshalled
 {
     class KMFContainerMarshalled : MarshalByRefObject,  IKMFContainerMarshalled
     {
         private readonly  org.kevoree.pmodeling.api.KMFContainer _kMFContainer;
+
+        public string serialize()
+        {
+            var kf = new org.kevoree.factory.DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this._kMFContainer);
+        }
 
         public IMBindingMarshalled CastToMBinding()
         {
@@ -66,6 +74,31 @@ namespace Org.Kevoree.Core.Marshalled
         public IKMFContainerMarshalled CastToKFMContainer()
         {
             return new KMFContainerMarshalled(this._kMFContainer);
+        }
+
+        public IComponentInstanceMarshalled CastToComponentInstance()
+        {
+            return new ComponentInstanceMarshalled((ComponentInstance) this._kMFContainer);
+        }
+
+        public IChannelMarshalled CastToChannel()
+        {
+            return new ChannelMarshalled((Channel)this._kMFContainer);
+        }
+
+        public IGroupMarshalled CastToGroup()
+        {
+            return  new GroupMarshalled((Group)_kMFContainer);
+        }
+
+        public IContainerNodeMarshalled CastToContainerNode()
+        {
+            return new ContainerNodeMarshalled((ContainerNode)this._kMFContainer);
+        }
+
+        public override string ToString()
+        {
+            return this._kMFContainer.ToString();
         }
     }
 }

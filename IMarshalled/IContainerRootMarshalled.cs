@@ -10,5 +10,7 @@ namespace Org.Kevoree.Core.Api.IMarshalled
     {
         IContainerNodeMarshalled findNodesByID(string str);
         IKMFContainerMarshalled findByPath(string path);
+        bool isReadOnly();
+        void setGenerated_KMF_ID(string id);
     }
 }

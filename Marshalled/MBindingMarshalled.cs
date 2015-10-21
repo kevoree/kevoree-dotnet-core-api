@@ -13,6 +13,12 @@ namespace Org.Kevoree.Core.Marshalled
     {
         private MBinding deleg;
 
+        public string serialize()
+        {
+            var kf = new org.kevoree.factory.DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this.deleg);
+        }
+
         public IPortMarshalled getPort()
         {
             return new PortMarshalled(this.deleg.getPort());

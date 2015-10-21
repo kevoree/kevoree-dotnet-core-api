@@ -23,6 +23,12 @@ namespace Org.Kevoree.Core.Marshalled
             this.deleg = deleg;
         }
 
+        public string serialize()
+        {
+            var kf = new org.kevoree.factory.DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this.deleg);
+        }
+
         
 
         public bool isOfType(Type t)
@@ -128,7 +134,16 @@ namespace Org.Kevoree.Core.Marshalled
         public void delete() { this.deleg.delete(); }
         
         public KMFContainer findByID(string str1, string str2) { return this.deleg.findByID(str1, str2); }
-        public IKMFContainerMarshalled findByPath(string str) { return new KMFContainerMarshalled(this.deleg.findByPath(str)); }
+
+        public IKMFContainerMarshalled findByPath(string str)
+        {
+            var a = this.deleg.findByPath(str);
+            if (a != null)
+            {
+                return new KMFContainerMarshalled(a);
+            }
+            return null;
+        }
         public string getRefInParent() { return this.deleg.getRefInParent(); }
         public string internalGetKey() { return this.deleg.internalGetKey(); }
         public bool isDeleted() { return this.deleg.isDeleted(); }

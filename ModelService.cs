@@ -2,6 +2,7 @@
 using org.kevoree;
 using Org.Kevoree.Core.Api.Handler;
 using org.kevoree.modeling.api.trace;
+using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Api
 {
@@ -9,11 +10,11 @@ namespace Org.Kevoree.Core.Api
 	{
 		UUIDModel getCurrentModel ();
 
-		ContainerRoot getPendingModel ();
+        IContainerRootMarshalled getPendingModel();
 
-		void compareAndSwap (ContainerRoot model, Guid uuid, UpdateCallback callback);
+        void compareAndSwap(IContainerRootMarshalled model, Guid uuid, UpdateCallback callback);
 
-		void update (ContainerRoot model, UpdateCallback callback);
+        void update(IContainerRootMarshalled model, UpdateCallback callback);
 
 		void registerModelListener (ModelListener listener);
 

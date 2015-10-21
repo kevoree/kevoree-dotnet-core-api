@@ -1,5 +1,6 @@
 using System;
 using org.kevoree;
+using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Api
 {
@@ -7,7 +8,7 @@ namespace Org.Kevoree.Core.Api
 	{
 		Guid getUUID();
 
-		ContainerRoot getModel();
+		IContainerRootMarshalled getModel();
 	}
 
 }

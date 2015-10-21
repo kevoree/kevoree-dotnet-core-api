@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Org.Kevoree.Core.Api.IMarshalled;
+using org.kevoree.factory;
 
 namespace Org.Kevoree.Core.Marshalled
 {
@@ -13,6 +14,7 @@ namespace Org.Kevoree.Core.Marshalled
 
         public ValueMarshalled(org.kevoree.Value valueMarshalled)
         {
+
             this.valueMarshalled = valueMarshalled;
         }
 
@@ -39,6 +41,22 @@ namespace Org.Kevoree.Core.Marshalled
         public IKMFContainerMarshalled CastToKFMContainer()
         {
             return new KMFContainerMarshalled(this.valueMarshalled);
+        }
+
+        public string serialize()
+        {
+            var kf = new DefaultKevoreeFactory();
+            return kf.createJSONSerializer().serialize(this.valueMarshalled);
+        }
+
+        public string getValue()
+        {
+            return this.valueMarshalled.getValue();
+        }
+
+        public string getName()
+        {
+            return this.valueMarshalled.getName();
         }
     }
 }

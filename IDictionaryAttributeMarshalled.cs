@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Org.Kevoree.Core.Api.IMarshalled
+namespace Org.Kevoree.Core.Api
 {
-    public interface IValueMarshalled : IKMFCommonMarshalled
+    public interface IDictionaryAttributeMarshalled
     {
-        string getValue();
         string getName();
+        string getDatatype();
     }
 }

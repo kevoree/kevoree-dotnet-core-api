@@ -12,6 +12,7 @@ namespace Org.Kevoree.Core.Api.IMarshalled
         IKMFContainerMarshalled eContainer();
         string getRefInParent();
         string path();
+        string serialize();
         IKMFContainerMarshalled CastToKFMContainer();
     }
 }
