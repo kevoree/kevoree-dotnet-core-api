@@ -8,7 +8,6 @@ namespace Org.Kevoree.Core.Api
 {
     public interface BootstrapService
     {
-        void injectDictionary(Instance instance, IRunner target, bool onlyDefault);
 
         INodeRunner createInstance(ContainerNode nodeInstance);
 
