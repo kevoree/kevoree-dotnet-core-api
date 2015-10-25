@@ -10,6 +10,12 @@ namespace Org.Kevoree.Core.Api
     {
         bool Run();
         bool Stop();
-        bool updateDictionary(IDictionaryAttributeMarshalled attribute,  IValueMarshalled value);
+        
+
+        /** Inject an PortOutput to a component */
+        void attacheOutputPort(Port port, string fieldName);
+
+        /** call a channel from an OutputPort */
+        void sendThroughInputPort(string value, string fieldName);
     }
 }

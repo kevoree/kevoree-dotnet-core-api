@@ -8,6 +8,5 @@ namespace Org.Kevoree.Core.Api.IMarshalled
 {
     public interface IGroupMarshalled : IInstanceMarshalled
     {
-        string getName();
     }
 }

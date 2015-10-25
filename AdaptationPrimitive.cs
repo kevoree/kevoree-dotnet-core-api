@@ -78,19 +78,55 @@ namespace Org.Kevoree.Core.Api
 
         public override string ToString()
         {
-            return "AdaptationPrimitive [Type = " + Type + " ; NodePath = " + NodePath + " ; Ref = " + _ref + "; Ref2 = " + _ref2 + "]";
+            string ref2str;
+            if (_ref2 == null)
+            {
+                ref2str = "";
+            }
+            else
+            {
+                ref2str = _ref2.path();}
+            
+            return "AdaptationPrimitive [Type = " + Type + "; RefPath = " + _ref.path() + "; Ref2Path = " + ref2str + "]";
         }
 
         public int CompareTo(object obj)
         {
             if (obj is AdaptationPrimitive)
             {
+                var that = (AdaptationPrimitive) obj;
                 var t1 = this.Type;
-                var n1 = this.NodePath;
-                var t2 = ((AdaptationPrimitive)obj).Type;
-                var n2 = ((AdaptationPrimitive)obj).NodePath;
-                if (t1.CompareTo(t2) != 0) return t1.CompareTo(t2);
-                return n1.CompareTo(n2);
+                var t2 = that.Type;
+                var c1 = t1.CompareTo(t2);
+                if (c1 != 0) return c1;
+
+                var r1 = this._ref.path();
+                var r2 = that._ref.path();
+                var c3 = r1.CompareTo(r2);
+                if (c3 != 0) return c3;
+
+                string r21;
+                string r22;
+
+                if (this._ref2 != null)
+                {
+                    r21 = this._ref2.path();
+                }
+                else
+                {
+                    r21 = "";
+                }
+
+                if (that._ref2 != null)
+                {
+                    r22 = that._ref2.path();
+                }
+                else
+                {
+                    r22 = "";
+                }
+
+                return r21.CompareTo(r22);
             }
             throw new IllegalArgumentException();
         }

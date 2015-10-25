@@ -8,6 +8,6 @@ namespace Org.Kevoree.Core.Api.IMarshalled
 {
     public interface IComponentInstanceMarshalled : IInstanceMarshalled
     {
-        string getName();
+        IPortMarshalled findProvidedByID(string id);
     }
 }

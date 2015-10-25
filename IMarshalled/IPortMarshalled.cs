@@ -8,6 +8,6 @@ namespace Org.Kevoree.Core.Api.IMarshalled
 {
     public interface IPortMarshalled : IKMFCommonMarshalled
     {
-        
+        string getName();
     }
 }

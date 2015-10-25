@@ -17,16 +17,17 @@ namespace Org.Kevoree.Core.Api.Marshalled
         public ComponentInstanceMarshalled(ComponentInstance component)
         {
             this.deleg = component;
+
         }
 
         public string getName()
         {
             return this.deleg.getName();
         }
+
         public bool isOfType(Type t)
         {
 
-            
             return t.IsAssignableFrom(this.deleg.GetType());
         }
 
@@ -82,6 +83,19 @@ namespace Org.Kevoree.Core.Api.Marshalled
                 ret.Add(new FragmentDictionaryMarshalled(fd));
             }
             return ret;
+        }
+
+        public IPortMarshalled findProvidedByID(string id)
+        {
+            var result = this.deleg.findProvidedByID(id);
+            if (result != null)
+            {
+                return new PortMarshalled(result);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
