@@ -31,5 +31,10 @@ namespace Org.Kevoree.Core.Marshalled
         {
             return new DictionaryTypeMarshalled(this.typeDefinition.getDictionaryType());
         }
+
+        public bool isOfType(Type t)
+        {
+            return t.IsInstanceOfType(this.typeDefinition);
+        }
     }
 }

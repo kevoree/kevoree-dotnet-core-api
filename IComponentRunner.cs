@@ -13,9 +13,13 @@ namespace Org.Kevoree.Core.Api
         
 
         /** Inject an PortOutput to a component */
-        void attacheOutputPort(Port port, string fieldName);
+        void attachOutputPort(Port port, string fieldName);
+
+        void attachInputPort(Port port, string fieldName);
 
         /** call a channel from an OutputPort */
         void sendThroughInputPort(string value, string fieldName);
+
+        void dispatch(string payload, Callback callback); // , string methodName
     }
 }

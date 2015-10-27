@@ -198,7 +198,7 @@
     <Compile Include="Callback.cs" />
     <Compile Include="CallbackResult.cs" />
     <Compile Include="ChannelDispatch.cs" />
-    <Compile Include="ChannelContext.cs" />
+    <Compile Include="ChannelPort.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Port.cs" />
     <Compile Include="ModelService.cs" />
