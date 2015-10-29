@@ -77,7 +77,19 @@ namespace Org.Kevoree.Core.Marshalled
         public Group findGroupsByID(string str) { return this.deleg.findGroupsByID(str); }
         public Channel findHubsByID(string str) { return this.deleg.findHubsByID(str); }
         public MBinding findMBindingsByID(string str) { return this.deleg.findMBindingsByID(str); }
-        public IContainerNodeMarshalled findNodesByID(string str) { return new ContainerNodeMarshalled(this.deleg.findNodesByID(str)); }
+
+        public IContainerNodeMarshalled findNodesByID(string str)
+        {
+            var ret = this.deleg.findNodesByID(str);
+            if (ret != null)
+            {
+                return new ContainerNodeMarshalled(ret);
+            }
+            else
+            {
+                return null;
+            }
+        }
         public Package findPackagesByID(string str) { return this.deleg.findPackagesByID(str); }
         public Repository findRepositoriesByID(string str) { return this.deleg.findRepositoriesByID(str); }
         public string getGenerated_KMF_ID() { return this.deleg.getGenerated_KMF_ID(); }

@@ -49,5 +49,20 @@ namespace Org.Kevoree.Core.Marshalled
         {
             return new KMFContainerMarshalled(this.deployUnit);
         }
+
+        public string getName()
+        {
+            return this.deployUnit.getName();
+        }
+
+        public string getVersion()
+        {
+            return this.deployUnit.getVersion();
+        }
+
+        public IValueMarshalled findFiltersByID(string p)
+        {
+            return new ValueMarshalled(this.deployUnit.findFiltersByID(p));
+        }
     }
 }

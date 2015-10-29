@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using org.kevoree;
+using org.kevoree.impl;
 using Org.Kevoree.Core.Api.IMarshalled;
 using Org.Kevoree.Core.Marshalled;
 
@@ -82,6 +83,11 @@ namespace Org.Kevoree.Core.Api.Marshalled
                 ret.Add(new FragmentDictionaryMarshalled(fd));
             }
             return ret;
+        }
+
+        public IFragmentDictionaryMarshalled findFragmentDictionaryByID(string p)
+        {
+            return new FragmentDictionaryMarshalled(this.deleg.findFragmentDictionaryByID(p));
         }
     }
 }

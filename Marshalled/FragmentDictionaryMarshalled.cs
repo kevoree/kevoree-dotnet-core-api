@@ -64,5 +64,10 @@ namespace Org.Kevoree.Core.Marshalled
             }
             return ret;
         }
+
+        public IValueMarshalled findValuesByID(string p)
+        {
+            return new ValueMarshalled(this.fragmentDictionary.findValuesByID(p));
+        }
     }
 }

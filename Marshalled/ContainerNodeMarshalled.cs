@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using org.kevoree;
 using Org.Kevoree.Core.Api;
 using Org.Kevoree.Core.Api.IMarshalled;
+using Org.Kevoree.Core.Api.Marshalled;
 
 namespace Org.Kevoree.Core.Marshalled
 {
@@ -13,10 +14,6 @@ namespace Org.Kevoree.Core.Marshalled
     {
         private readonly org.kevoree.ContainerNode _containerNode;
 
-        public ContainerNode getDelegate()
-        {    
-            return _containerNode;
-        }
 
         public string getName()
         {
@@ -64,6 +61,23 @@ namespace Org.Kevoree.Core.Marshalled
         public IContainerNodeMarshalled getHost()
         {
             return new ContainerNodeMarshalled(this._containerNode.getHost());
+        }
+
+        public List<INetworkInfoMarshalled> getNetworkInformation()
+        {
+            var lst = new List<INetworkInfoMarshalled>();
+            var itt = this._containerNode.getNetworkInformation().iterator();
+            while (itt.hasNext())
+            {
+                lst.Add(new NetworkInforMarshalled((NetworkInfo)itt.next()));
+            }
+
+            return lst;
+        }
+
+        public ITypeDefinitionMarshalled getTypeDefinition()
+        {
+            return new TypeDefinitionMarshalled(this._containerNode.getTypeDefinition());
         }
     }
 }

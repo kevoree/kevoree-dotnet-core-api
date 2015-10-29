@@ -9,8 +9,11 @@ namespace Org.Kevoree.Core.Api.IMarshalled
 {
     public interface IContainerNodeMarshalled : IKMFCommonMarshalled
     {
-        ContainerNode getDelegate();
         string getName();
         IContainerNodeMarshalled getHost();
+
+        List<INetworkInfoMarshalled> getNetworkInformation();
+
+        ITypeDefinitionMarshalled getTypeDefinition();
     }
 }

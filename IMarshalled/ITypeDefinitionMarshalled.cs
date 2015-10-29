@@ -12,5 +12,7 @@ namespace Org.Kevoree.Core.Api.IMarshalled
         string getName();
         IDictionaryTypeMarshalled getDictionaryType();
         bool isOfType(Type t);
+
+        List<IDeployUnitMarshalled> getDeployUnits();
     }
 }

@@ -162,6 +162,7 @@
     <Compile Include="IMarshalled\IKMFCommonMarshalled.cs" />
     <Compile Include="IMarshalled\IKMFContainerMarshalled.cs" />
     <Compile Include="IMarshalled\IMBindingMarshalled.cs" />
+    <Compile Include="IMarshalled\INetworkInfoMarshalled.cs" />
     <Compile Include="IMarshalled\IPortMarshalled.cs" />
     <Compile Include="IMarshalled\ITypeDefinitionMarshalled.cs" />
     <Compile Include="IMarshalled\IValueMarshalled.cs" />
@@ -186,6 +187,7 @@
     <Compile Include="Marshalled\InstanceMarshalled.cs" />
     <Compile Include="Marshalled\KMFContainerMarshalled.cs" />
     <Compile Include="Marshalled\MBindingMarshalled.cs" />
+    <Compile Include="Marshalled\NetworkInforMarshalled.cs" />
     <Compile Include="Marshalled\PortMarshalled.cs" />
     <Compile Include="Marshalled\Traces\ModelAddTraceMarshalled.cs" />
     <Compile Include="Marshalled\Traces\ModelRemoveTraceMarshalled.cs" />

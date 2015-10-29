@@ -8,5 +8,10 @@ namespace Org.Kevoree.Core.Api.IMarshalled
 {
     public interface IDeployUnitMarshalled : IKMFCommonMarshalled
     {
+        string getName();
+
+        string getVersion();
+
+        IValueMarshalled findFiltersByID(string p);
     }
 }

@@ -93,7 +93,9 @@ namespace Org.Kevoree.Core.Marshalled
 
         public IContainerNodeMarshalled CastToContainerNode()
         {
-            return new ContainerNodeMarshalled((ContainerNode)this._kMFContainer);
+            var casted = (ContainerNode) this._kMFContainer;
+            var ret = new ContainerNodeMarshalled(casted);
+            return ret;
         }
 
         public override string ToString()
