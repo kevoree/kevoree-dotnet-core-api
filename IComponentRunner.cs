@@ -16,8 +16,10 @@ namespace Org.Kevoree.Core.Api
         void attachOutputPort(Port port, string fieldName);
 
         void attachInputPort(Port port);
+        void attachRemoteInputPort(Port port);
 
         void detachInputPort(Port port);
+        void detachRemoteInputPort(Port port);
 
         /** call a channel from an OutputPort */
         void sendThroughInputPort(string value, string fieldName);

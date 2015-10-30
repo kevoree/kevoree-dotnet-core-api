@@ -7,5 +7,7 @@ namespace Org.Kevoree.Core.Api
 	{
 	    void addInputPort(Port p);
 	    void removeInputPort(Port p);
+        void addRemoteInputPort(Port p);
+        void removeRemoteInputPort(Port p);
 	}
 }
