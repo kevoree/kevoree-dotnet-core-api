@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using java.lang;
 using Org.Kevoree.Core.Api.IMarshalled;
 using Object = System.Object;
 
@@ -57,11 +56,11 @@ namespace Org.Kevoree.Core.Api
 
         public override int GetHashCode()
         {
-            if (this._ref2 != null)
-            {
-                return Type.GetHashCode() ^ NodePath.GetHashCode() ^ _ref.GetHashCode() ^ _ref2.GetHashCode();
-            }
-            else { return Type.GetHashCode() ^ NodePath.GetHashCode() ^ _ref.GetHashCode(); }
+            String r1 = this._ref != null ? this._ref.path() : "";
+            String r2 = this._ref2 != null ? this._ref2.path() : "";
+
+            return Type.GetHashCode() ^ NodePath.GetHashCode() ^ r1.GetHashCode() ^ r2.GetHashCode();
+            
         }
 
         public override bool Equals(object obj)
@@ -73,11 +72,22 @@ namespace Org.Kevoree.Core.Api
                 var b = Tuple.Create(that.Type, that.NodePath, that._ref, that._ref2);
                 return a.Equals(b);
             }
-            throw new IllegalArgumentException();
+            throw new java.lang.IllegalArgumentException();
         }
 
         public override string ToString()
         {
+
+            string ref1str;
+            if (_ref == null)
+            {
+                ref1str = "";
+            }
+            else
+            {
+                ref1str = _ref.path();
+            }
+
             string ref2str;
             if (_ref2 == null)
             {
@@ -85,9 +95,12 @@ namespace Org.Kevoree.Core.Api
             }
             else
             {
-                ref2str = _ref2.path();}
-            
-            return "AdaptationPrimitive [Type = " + Type + "; RefPath = " + _ref.path() + "; Ref2Path = " + ref2str + "]";
+                ref2str = _ref2.path();
+            }
+
+
+
+            return "AdaptationPrimitive [Type = " + Type + "; RefPath = " + ref1str + "; Ref2Path = " + ref2str + "]";
         }
 
         public int CompareTo(object obj)
@@ -128,7 +141,7 @@ namespace Org.Kevoree.Core.Api
 
                 return r21.CompareTo(r22);
             }
-            throw new IllegalArgumentException();
+            throw new java.lang.IllegalArgumentException();
         }
 
     }
