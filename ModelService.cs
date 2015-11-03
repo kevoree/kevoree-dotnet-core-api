@@ -1,7 +1,6 @@
 ﻿using System;
 using org.kevoree;
 using Org.Kevoree.Core.Api.Handler;
-using org.kevoree.modeling.api.trace;
 using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Api
