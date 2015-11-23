@@ -9,6 +9,9 @@ namespace Org.Kevoree.Core.Api
     public interface IRunner
     {
         void setPluginPath(string pluginPath);
+        void setPackageName(string packageName);
+        void setPackageVersion(string packageVersion);
         bool updateDictionary(IDictionaryAttributeMarshalled attribute, IValueMarshalled value);
+
     }
 }
