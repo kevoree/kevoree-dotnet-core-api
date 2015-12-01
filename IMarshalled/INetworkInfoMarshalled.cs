@@ -9,5 +9,6 @@ namespace Org.Kevoree.Core.Api.IMarshalled
     public interface INetworkInfoMarshalled: IKMFCommonMarshalled
     {
         List<IValueMarshalled> getValues();
+        string getName();
     }
 }

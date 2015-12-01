@@ -58,5 +58,10 @@ namespace Org.Kevoree.Core.Api.Marshalled
             }
             return ret;
         }
+
+        public string getName()
+        {
+            return deleg.getName();
+        }
     }
 }
