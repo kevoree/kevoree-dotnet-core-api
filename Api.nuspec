@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>org-kevoree-api</id>
-    <version>1.8.0</version>
+    <version>5.4.3</version>
     <title>Kevoree Api</title>
     <authors>Manuel Leduc</authors>
     <owners>Kevoree</owners>
@@ -14,8 +14,12 @@
     <releaseNotes>Add a method to NetworkInformations.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Kevoree Api</tags>
+ 	<dependencies>
+            <dependency id="IKVM" version="[8.1.5717.0]" />
+            <dependency id="Org.Kevoree.Core.Model" version="5.4.7" />
+        </dependencies>
   </metadata>
   <files>
-    <file src="bin/Release/Core.Api.dll" target="lib/net40/Core.Api.dll" />
+    <file src="bin/Release/Core.Api.dll" target="lib/net45/Core.Api.dll" />
   </files>
 </package>

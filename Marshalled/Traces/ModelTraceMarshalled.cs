@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using org.kevoree.pmodeling.api.trace;
+using org.kevoree.modeling.api.trace;
 using Org.Kevoree.Core.Api;
 
 namespace Org.Kevoree.Core.Marshalled
@@ -32,7 +32,7 @@ namespace Org.Kevoree.Core.Marshalled
             return this._modelTrace.getSrcPath();
         }
 
-        public org.kevoree.pmodeling.api.util.ActionType getTraceType()
+        public org.kevoree.modeling.api.util.ActionType getTraceType()
         {
             return this._modelTrace.getTraceType();
         }

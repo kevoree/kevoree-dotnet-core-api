@@ -13,7 +13,7 @@ namespace Org.Kevoree.Core.Marshalled
 {
     class KMFContainerMarshalled : MarshalByRefObject,  IKMFContainerMarshalled
     {
-        private readonly  org.kevoree.pmodeling.api.KMFContainer _kMFContainer;
+        private readonly  org.kevoree.modeling.api.KMFContainer _kMFContainer;
 
         public string serialize()
         {
@@ -46,7 +46,7 @@ namespace Org.Kevoree.Core.Marshalled
             return new FragmentDictionaryMarshalled((FragmentDictionary) this._kMFContainer);
         }
 
-        public KMFContainerMarshalled(org.kevoree.pmodeling.api.KMFContainer kMFContainer)
+        public KMFContainerMarshalled(org.kevoree.modeling.api.KMFContainer kMFContainer)
         {
             this._kMFContainer = kMFContainer;
         }

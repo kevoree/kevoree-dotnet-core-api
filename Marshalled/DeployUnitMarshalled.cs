@@ -5,7 +5,7 @@ using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 using org.kevoree;
-using org.kevoree.pmodeling.api;
+using org.kevoree.modeling.api;
 using Org.Kevoree.Core.Api.IMarshalled;
 
 namespace Org.Kevoree.Core.Marshalled

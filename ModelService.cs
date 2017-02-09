@@ -28,7 +28,7 @@ namespace Org.Kevoree.Core.Api
 
 		void submitScript (string script, UpdateCallback callback);
 
-        void submitSequence(org.kevoree.pmodeling.api.trace.TraceSequence sequence, UpdateCallback callback);
+        void submitSequence(org.kevoree.modeling.api.trace.TraceSequence sequence, UpdateCallback callback);
 	}
 }
 
