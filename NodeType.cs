@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using org.kevoree.modeling.api.trace;
+using org.kevoree.pmodeling.api.trace;
 using Org.Kevoree.Core.Api;
 using Org.Kevoree.Core.Api.Command;
 using Org.Kevoree.Core.Api.IMarshalled;

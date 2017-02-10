@@ -5,9 +5,9 @@ using System.Text;
 
 using org.kevoree;
 using java.util;
-using org.kevoree.modeling.api.events;
-using org.kevoree.modeling.api;
-using org.kevoree.modeling.api.util;
+using org.kevoree.pmodeling.api.events;
+using org.kevoree.pmodeling.api;
+using org.kevoree.pmodeling.api.util;
 using Org.Kevoree.Core.Api;
 using Org.Kevoree.Core.Api.IMarshalled;
 

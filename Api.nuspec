@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>org-kevoree-api</id>
-    <version>5.4.3</version>
+    <version>5.4.4</version>
     <title>Kevoree Api</title>
     <authors>Manuel Leduc</authors>
     <owners>Kevoree</owners>
@@ -16,7 +16,7 @@
     <tags>Kevoree Api</tags>
  	<dependencies>
             <dependency id="IKVM" version="[8.1.5717.0]" />
-            <dependency id="Org.Kevoree.Core.Model" version="5.4.7" />
+            <dependency id="Org.Kevoree.Core.Model" version="5.4.9" />
         </dependencies>
   </metadata>
   <files>

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using org.kevoree.modeling.api.trace;
+using org.kevoree.pmodeling.api.trace;
 using Org.Kevoree.Core.Api;
 
 namespace Org.Kevoree.Core.Marshalled
 {
     class ModelAddTraceMarshalled : MarshalByRefObject, IModelAddTraceMarshalled
     {
-        private readonly org.kevoree.modeling.api.trace.ModelAddTrace _modelAddTrace;
+        private readonly org.kevoree.pmodeling.api.trace.ModelAddTrace _modelAddTrace;
 
-        public ModelAddTraceMarshalled(org.kevoree.modeling.api.trace.ModelAddTrace modelAddTrace)
+        public ModelAddTraceMarshalled(org.kevoree.pmodeling.api.trace.ModelAddTrace modelAddTrace)
         {
             this._modelAddTrace = modelAddTrace;
         }
@@ -26,7 +26,7 @@ namespace Org.Kevoree.Core.Marshalled
             return this._modelAddTrace.getSrcPath();
         }
 
-        public org.kevoree.modeling.api.util.ActionType getTraceType()
+        public org.kevoree.pmodeling.api.util.ActionType getTraceType()
         {
             return this._modelAddTrace.getTraceType();
         }

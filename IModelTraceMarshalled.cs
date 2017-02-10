@@ -9,7 +9,7 @@ namespace Org.Kevoree.Core.Api
     {
         string getRefName();
         string getSrcPath();
-        org.kevoree.modeling.api.util.ActionType getTraceType();
+        org.kevoree.pmodeling.api.util.ActionType getTraceType();
         string toCString(bool b1, bool b2);
         string toString();
         bool isOfType(Type a);
